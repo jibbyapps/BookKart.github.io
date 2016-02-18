@@ -1,4 +1,4 @@
-var app = angular.module('bookKart', ['ngRoute']);
+var app = angular.module('bookKart', ["ngRoute", "ngAnimate"]);
 
 app.config(function ($routeProvider) {
 	$routeProvider
@@ -13,6 +13,12 @@ app.config(function ($routeProvider) {
 		.when('/kart', {
 		templateUrl: 'views/karList.html',
 		controller: 'kartCtrl'
+	})
+	.when('/about', {
+		templateUrl: 'views/about.html'
+	})
+	.when('/contact', {
+		templateUrl: 'views/contact.html'
 	})
     .otherwise({ 
         redirectTo: '/home' 
