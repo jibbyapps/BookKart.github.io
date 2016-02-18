@@ -1,3 +1,5 @@
+										/*BookList view*/
+
 #bookListWrapper {
 	width: 100%;
 	padding: 10px;
@@ -17,6 +19,4 @@
 	margin-left: 160px;
 }
 
-li.book {
-	background: #fff url("../images/adultery.jpeg") no-repeat;
-}
+
