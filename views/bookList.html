@@ -11,7 +11,7 @@
 	<div>
 		<ul class="list-unstyled">
 			
-			<li class="book" ng-repeat="book in books">
+			<li class="book" ng-repeat="book in books" style="background: #fff url(images/{{ book.imgUrl }}) no-repeat">
 				
 				<div class="book-details clearfix">
 					<h3>{{ book.name }}</h3>
@@ -25,7 +25,7 @@
 					</ul>
 					
 					<p>{{ book.details }}</p>
-					<button class="btn btn-info pull-right">Add to Kart</button>
+					<button class="btn btn-info pull-right" ng-click="addToKart(book)">Add to Kart</button>
 					
 				</div>
 			</li>
